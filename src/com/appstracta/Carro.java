@@ -1,3 +1,5 @@
+package com.appstracta;
+
 public class Carro {
 
 	// Propiedades o atributos
@@ -5,16 +7,22 @@ public class Carro {
 	private int velocidad;
 	private boolean motor;
 
+	// constructor nos permite crea la instacia o objeto
 	public Carro() {
-		System.out.println("Crea una isntancia");
+		System.out.println("Crea una instancia un objeto");
+	}
+
+	public Carro(String color, int velocidad) {
+		this.color = color;
+		this.velocidad = velocidad;
 	}
 
 	// Métodos o acciones
-	public boolean arrancar () {
+	public boolean arrancar() {
 		return true;
 	}
 
-	public boolean apagar () {
+	public boolean apagar() {
 		return true;
 	}
 
@@ -23,7 +31,6 @@ public class Carro {
 	}
 
 	// Encapsulamiento getter / setter
-
 	// Getter
 	public String getColor() {
 		return this.color;
