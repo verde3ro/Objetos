@@ -15,6 +15,14 @@ public class Carro {
 	public Carro(String color, int velocidad) {
 		this.color = color;
 		this.velocidad = velocidad;
+		System.out.println("Segundo constructor");
+	}
+
+	// Sobre carga de construtores
+	public Carro(String color, int velocidad, boolean motor) {
+		this(color, velocidad);
+		this.motor = motor;
+		System.out.println("Tercer constructor");
 	}
 
 	// Métodos o acciones
