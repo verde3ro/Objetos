@@ -6,6 +6,7 @@ public class Carro {
 	private String color;
 	private int velocidad;
 	private boolean motor;
+	private int i;
 
 	// constructor nos permite crea la instacia o objeto
 	public Carro() {
@@ -35,7 +36,8 @@ public class Carro {
 	}
 
 	public int incrementarVelocidad(int velocidad) {
-		return this.velocidad = this.velocidad + velocidad;
+		i = this.velocidad += velocidad;
+		return i;
 	}
 
 	// Encapsulamiento getter / setter
